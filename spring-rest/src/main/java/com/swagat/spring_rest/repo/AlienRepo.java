@@ -43,8 +43,7 @@ public class AlienRepo {
                 return a;
             }
         };
-        List<Alien> aliens = template.query(sql,mapper);
-        return  aliens;
+        return template.query(sql,mapper);
     }
 
     public Optional<Alien> findById(int id){
